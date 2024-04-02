@@ -112,7 +112,12 @@ private bool ApplyChecks(string dir, PackageCheck[] checks)
     bool allOK = true;
 
     foreach (var check in checks)
-        allOK &= check.Apply(dir);
+    {
+        var ok = check.Apply(dir);
+        if (!ok)
+            WriteInfo($"Check failed.for {dir}");
+        allOK &= ok;
+        }
 
     return allOK;
 }

@@ -56,11 +56,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nunit3-console", "src\NUnitConsole\nunit3-console\nunit3-console.csproj", "{0DE218CA-AFB8-423A-9CD2-E22DEAC55C46}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nunit3-console.tests", "src\NUnitConsole\nunit3-console.tests\nunit3-console.tests.csproj", "{B310A760-8AE1-41CA-81F8-03B12E2FCE30}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B1D90742-39BD-429C-8E87-C5CD2991DF27} = {B1D90742-39BD-429C-8E87-C5CD2991DF27}
-		{D694CB69-6CFB-4762-86C2-EB27B808B282} = {D694CB69-6CFB-4762-86C2-EB27B808B282}
-		{C2A8FC7A-FA64-46EA-AF6D-73D6B371DBF8} = {C2A8FC7A-FA64-46EA-AF6D-73D6B371DBF8}
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "engine", "engine", "{43A219A8-2995-4884-806F-FDB9CD25D403}"
 	ProjectSection(SolutionItems) = preProject
@@ -72,6 +67,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "engine", "engine", "{43A219
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "runners", "runners", "{F3E87D0F-6F06-4C0B-AE06-42C0834C3C6E}"
 	ProjectSection(SolutionItems) = preProject
+		nuget\runners\DotnetToolSettings.xml = nuget\runners\DotnetToolSettings.xml
 		nuget\runners\nunit.agent.addins = nuget\runners\nunit.agent.addins
 		nuget\runners\nunit.console-runner-with-extensions.nuspec = nuget\runners\nunit.console-runner-with-extensions.nuspec
 		nuget\runners\nunit.console-runner.netcore.nuspec = nuget\runners\nunit.console-runner.netcore.nuspec
